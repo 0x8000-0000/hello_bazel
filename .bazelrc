@@ -1,0 +1,19 @@
+#
+# Enable modules
+#
+common --experimental_enable_bzlmod
+
+#
+# Use external packages
+#
+common --registry=https://raw.githubusercontent.com/0x8000-0000/bazel-central-registry/add-fmt-support
+
+#
+# Enable C++17
+#
+build --cxxopt=-std=c++17
+
+#
+# Tighten warnings
+#
+build --cxxopt='-Werror' --cxxopt='-pedantic' --cxxopt='-Wall' --cxxopt='-Wextra'
