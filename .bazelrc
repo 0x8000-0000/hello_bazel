@@ -6,7 +6,7 @@ common --experimental_enable_bzlmod
 #
 # Use external packages
 #
-common --registry=https://raw.githubusercontent.com/0x8000-0000/bazel-central-registry/add-fmt-support
+common --registry=https://raw.githubusercontent.com/bazelbuild/bazel-central-registry/main
 
 #
 # Enable C++17
